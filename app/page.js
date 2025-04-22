@@ -1,3 +1,5 @@
+'use client'; // Add this line at the top
+
 import { personalData } from "@/utils/data/personal-data";
 import AboutSection from "./components/homepage/about";
 // import Blog from "./components/homepage/blog";
@@ -26,7 +28,7 @@ export default async function Home() {
   const blogs = await getData();
 
   return (
-    <div suppressHydrationWarning >
+    <div suppressHydrationWarning>
       <HeroSection />
       <AboutSection />
       <Experience />
